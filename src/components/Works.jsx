@@ -1,0 +1,64 @@
+import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
+import { works } from '../data/works.js';
+
+export default function Works() {
+  return (
+    <section id="works" className="bg-fog py-24 text-ink sm:py-32">
+      <div className="section-shell">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col justify-between gap-6 md:flex-row md:items-end"
+        >
+          <div>
+            <p className="eyebrow text-mint-500">Works</p>
+            <h2 className="mt-4 text-4xl font-black leading-tight sm:text-6xl">Portfolio Archive</h2>
+          </div>
+          <p className="max-w-md text-base leading-7 text-zinc-600">
+            웹 예능부터 단편영화, 인터뷰와 브랜드 협업까지. 프로젝트는 게시물처럼 빠르게 읽히고, 작품처럼
+            오래 남도록 정리했습니다.
+          </p>
+        </motion.div>
+
+        <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {works.map((work, index) => (
+            <motion.article
+              key={work.title}
+              initial={{ opacity: 0, y: 26 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.22 }}
+              transition={{ duration: 0.58, delay: index * 0.06 }}
+              className="group border border-zinc-200 bg-white p-3 transition duration-300 hover:-translate-y-1 hover:border-mint-300 hover:shadow-mint"
+            >
+              <div className={`relative aspect-[4/3] overflow-hidden bg-gradient-to-br ${work.accent}`}>
+                <div className="absolute inset-3 border border-ink/16" />
+                <div className="absolute left-5 top-5 bg-ink px-3 py-2 text-xs font-black uppercase tracking-[0.18em] text-mint-300">
+                  {work.tag}
+                </div>
+                <div className="absolute bottom-5 left-5 right-5">
+                  <p className="text-xs font-black uppercase tracking-[0.28em] text-ink/55">{work.category}</p>
+                  <p className="mt-2 text-4xl font-black leading-none text-ink">{work.title}</p>
+                </div>
+              </div>
+              <div className="p-5">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-bold text-mint-500">{work.category}</p>
+                    <h3 className="mt-2 text-2xl font-black">{work.title}</h3>
+                  </div>
+                  <span className="grid h-10 w-10 shrink-0 place-items-center border border-zinc-200 transition group-hover:border-mint-300 group-hover:bg-mint-300">
+                    <ArrowUpRight size={18} />
+                  </span>
+                </div>
+                <p className="mt-5 text-sm leading-6 text-zinc-600">{work.description}</p>
+              </div>
+            </motion.article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
