@@ -5,6 +5,7 @@ export const works = [
     description: '술자리의 느슨한 리듬 안에서 출연자의 말투, 침묵, 관계가 자연스럽게 드러나는 웹 예능 포맷.',
     tag: 'Original Format',
     accent: 'from-mint-300 to-white',
+    image: './images/works/sul.jpg',
   },
   {
     title: 'ONE SCENE FILM',
@@ -28,6 +29,7 @@ export const works = [
     description: '꾸며진 답변보다 표정과 호흡을 따라가며 브랜드와 인물의 진짜 접점을 찾아내는 인터뷰.',
     tag: 'Interview',
     accent: 'from-zinc-200 to-mint-300',
+    image: './images/works/talk.jpg',
   },
   {
     title: 'BRAND CHARACTER',
