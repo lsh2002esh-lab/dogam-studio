@@ -17,10 +17,16 @@ export default function Works() {
             <p className="eyebrow text-mint-500">Works</p>
             <h2 className="mt-4 text-4xl font-black leading-tight sm:text-6xl">Portfolio Archive</h2>
           </div>
-          <p className="max-w-md text-base leading-7 text-zinc-600">
-            웹 예능부터 단편영화, 인터뷰와 브랜드 협업까지. 프로젝트는 게시물처럼 빠르게 읽히고, 작품처럼
-            오래 남도록 정리했습니다.
-          </p>
+          <div className="flex max-w-md flex-wrap gap-2">
+            {['#웹 예능', '#단편영화', '#인터뷰', '#브랜드협업'].map((tag) => (
+              <span
+                key={tag}
+                className="border border-zinc-200 bg-white px-3 py-2 text-sm font-black text-zinc-700"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </motion.div>
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
