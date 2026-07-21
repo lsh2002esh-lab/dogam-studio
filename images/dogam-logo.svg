@@ -1,0 +1,29 @@
+<svg width="520" height="160" viewBox="0 0 520 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">DO_GAM STUDIO logo</title>
+  <desc id="desc">DG monogram framed by viewfinder corners for DO_GAM STUDIO.</desc>
+  <rect width="520" height="160" fill="transparent"/>
+  <g transform="translate(18 18)" stroke-linecap="square">
+    <path d="M0 34V0H34" stroke="#F4F7F6" stroke-width="8"/>
+    <path d="M134 0H168V34" stroke="#36DFB6" stroke-width="8"/>
+    <path d="M0 90V124H34" stroke="#36DFB6" stroke-width="8"/>
+    <path d="M134 124H168V90" stroke="#F4F7F6" stroke-width="8"/>
+    <circle cx="130" cy="38" r="7" fill="#36DFB6"/>
+    <path
+      d="M50 33H80C101 33 116 48 116 62C116 78 101 92 80 92H50V33Z"
+      stroke="#F4F7F6"
+      stroke-width="12"
+      stroke-linejoin="miter"
+    />
+    <path
+      d="M121 61H92C76 61 64 72 64 84C64 99 78 111 98 111H132V85H101"
+      stroke="#F4F7F6"
+      stroke-width="12"
+      stroke-linejoin="miter"
+    />
+  </g>
+  <g fill="#F4F7F6">
+    <text x="224" y="70" font-family="Pretendard, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="5">DO_GAM</text>
+    <text x="226" y="112" font-family="Pretendard, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="10">STUDIO</text>
+  </g>
+  <rect x="224" y="84" width="176" height="4" fill="#36DFB6"/>
+</svg>
