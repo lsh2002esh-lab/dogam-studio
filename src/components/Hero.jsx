@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowDownRight, Play, Sparkles } from 'lucide-react';
 
 const container = {
@@ -15,7 +16,23 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.72, ease: [0.22, 1, 0.36, 1] } },
 };
 
+const heroImages = [
+  './images/hero/take1.jpg',
+  './images/hero/take2.jpg',
+  './images/hero/take3.jpg',
+];
+
 export default function Hero() {
+  const [activeImage, setActiveImage] = useState(0);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveImage((current) => (current + 1) % heroImages.length);
+    }, 4000);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
   return (
     <section id="top" className="noise relative flex min-h-screen items-center bg-ink pt-24">
       <div className="section-shell relative z-10 grid gap-12 pb-16 pt-12 lg:grid-cols-[1.08fr_0.92fr] lg:items-end lg:pt-20">
@@ -62,13 +79,27 @@ export default function Hero() {
             Archive 001
           </div>
           <div className="grid h-full min-h-[360px] grid-cols-6 grid-rows-6 gap-2">
-            <div className="col-span-4 row-span-4 overflow-hidden bg-mint-300 p-5 text-ink">
-              <div className="flex h-full flex-col justify-between">
-                <Play size={42} fill="currentColor" />
-                <div>
-                  <p className="text-xs font-black uppercase tracking-[0.22em]">Human Record</p>
-                  <p className="mt-2 text-4xl font-black leading-none">사람이라는 장르</p>
-                </div>
+            <div className="relative col-span-4 row-span-4 overflow-hidden bg-ink text-white">
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={heroImages[activeImage]}
+                  src={heroImages[activeImage]}
+                  alt="도감 스튜디오 촬영 현장"
+                  className="absolute inset-0 h-full w-full object-cover"
+                  initial={{ opacity: 0, scale: 1.04 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.98 }}
+                  transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+                />
+              </AnimatePresence>
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/24 to-transparent" />
+              <div className="absolute inset-3 border border-white/24" />
+              <div className="absolute left-5 top-5 grid h-11 w-11 place-items-center bg-mint-300 text-ink">
+                <Play size={22} fill="currentColor" />
+              </div>
+              <div className="absolute bottom-5 left-5 right-5">
+                <p className="text-xs font-black uppercase tracking-[0.22em] text-mint-300">Human Record</p>
+                <p className="mt-2 text-4xl font-black leading-none">사람이라는 장르</p>
               </div>
             </div>
             <div className="col-span-2 row-span-2 border border-white/12 bg-white/8" />
