@@ -1,7 +1,6 @@
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
-import History from './components/History.jsx';
 import Identity from './components/Identity.jsx';
 import Works from './components/Works.jsx';
 import Process from './components/Process.jsx';
@@ -15,7 +14,6 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <History />
         <Identity />
         <Works />
         <Process />
