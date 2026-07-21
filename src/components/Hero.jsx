@@ -103,10 +103,17 @@ export default function Hero() {
               </div>
             </div>
             <div className="col-span-2 row-span-2 border border-white/12 bg-white/8" />
-            <div className="col-span-2 row-span-3 bg-white text-ink">
-              <div className="flex h-full flex-col justify-between p-4">
-                <span className="text-5xl font-black">24</span>
-                <span className="text-xs font-bold uppercase tracking-[0.2em]">Frames</span>
+            <div className="relative col-span-2 row-span-3 overflow-hidden bg-ink text-white">
+              <img
+                src="./images/hero/copop.jpg"
+                alt="도감 스튜디오 콘텐츠 현장"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/78 via-transparent to-transparent" />
+              <div className="absolute inset-2 border border-mint-300/45" />
+              <div className="absolute bottom-3 left-3 right-3">
+                <span className="text-xs font-black uppercase tracking-[0.2em] text-mint-300">Frames</span>
               </div>
             </div>
             <div className="col-span-3 row-span-2 border border-mint-300/60 bg-ink p-4">
