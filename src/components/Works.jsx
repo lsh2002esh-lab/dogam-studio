@@ -40,13 +40,23 @@ export default function Works() {
               className="group border border-zinc-200 bg-white p-3 transition duration-300 hover:-translate-y-1 hover:border-mint-300 hover:shadow-mint"
             >
               <div className={`relative aspect-[4/3] overflow-hidden bg-gradient-to-br ${work.accent}`}>
-                <div className="absolute inset-3 border border-ink/16" />
+                {work.image && (
+                  <img
+                    src={work.image}
+                    alt={`${work.category} 포트폴리오 이미지`}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                )}
+                <div className="absolute inset-3 border border-white/30 mix-blend-screen" />
                 <div className="absolute left-5 top-5 bg-ink px-3 py-2 text-xs font-black uppercase tracking-[0.18em] text-mint-300">
                   {work.tag}
                 </div>
-                <div className="absolute bottom-5 left-5 right-5">
-                  <p className="text-xs font-black uppercase tracking-[0.28em] text-ink/55">{work.category}</p>
-                  <p className="mt-2 text-4xl font-black leading-none text-ink">{work.title}</p>
+                <div className={`absolute bottom-5 left-5 right-5 ${work.image ? 'text-white' : 'text-ink'}`}>
+                  <p className={`text-xs font-black uppercase tracking-[0.28em] ${work.image ? 'text-white/70' : 'text-ink/55'}`}>
+                    {work.category}
+                  </p>
+                  <p className="mt-2 text-4xl font-black leading-none">{work.title}</p>
                 </div>
               </div>
               <div className="p-5">

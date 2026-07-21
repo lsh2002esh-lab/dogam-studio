@@ -12,13 +12,15 @@ export const works = [
     description: '한 인물의 선택이 선명하게 남는 짧은 러닝타임의 드라마 프로젝트.',
     tag: 'Short Film',
     accent: 'from-white to-mint-100',
+    image: './images/works/shortmovie.jpg',
   },
   {
     title: 'HUMAN INDEX',
-    category: '유튜브 웹 예능',
+    category: '웹 예능',
     description: '사람의 취향, 습관, 직업, 관계를 관찰해 하나의 인물 도감처럼 구성하는 시리즈.',
     tag: 'Web Variety',
     accent: 'from-mint-400 to-mint-100',
+    image: './images/works/comedy.jpg',
   },
   {
     title: 'RAW INTERVIEW',
@@ -33,6 +35,7 @@ export const works = [
     description: '브랜드를 하나의 사람처럼 관찰하고, 고객이 기억할 수 있는 장면과 목소리로 번역하는 협업 영상.',
     tag: 'Branded Content',
     accent: 'from-mint-100 to-white',
+    image: './images/works/brandcop.jpg',
   },
 ];
 
