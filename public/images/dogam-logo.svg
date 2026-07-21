@@ -1,24 +1,25 @@
 <svg width="520" height="160" viewBox="0 0 520 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">DO_GAM STUDIO logo</title>
-  <desc id="desc">Balanced white D monogram framed by fine viewfinder corners for DO_GAM STUDIO.</desc>
+  <desc id="desc">Modern white D letter framed by fine viewfinder corners for DO_GAM STUDIO.</desc>
   <rect width="520" height="160" fill="transparent"/>
   <g transform="translate(18 18)" stroke-linecap="square">
     <rect x="-10" y="-10" width="188" height="144" fill="#050606"/>
-    <path d="M0 32V0H32" stroke="#F8FAF9" stroke-width="6"/>
-    <path d="M136 0H168V32" stroke="#36DFB6" stroke-width="6"/>
-    <path d="M0 92V124H32" stroke="#36DFB6" stroke-width="6"/>
-    <path d="M136 124H168V92" stroke="#F8FAF9" stroke-width="6"/>
-    <circle cx="130" cy="38" r="7" fill="#36DFB6"/>
+    <path d="M0 32V0H32" stroke="#F8FAF9" stroke-width="5"/>
+    <path d="M136 0H168V32" stroke="#36DFB6" stroke-width="5"/>
+    <path d="M0 92V124H32" stroke="#36DFB6" stroke-width="5"/>
+    <path d="M136 124H168V92" stroke="#F8FAF9" stroke-width="5"/>
+    <circle cx="128" cy="38" r="7" fill="#36DFB6"/>
     <path
-      d="M51 30H80C103 30 120 44 120 62C120 82 103 96 80 96H51V30Z"
+      d="M48 28H78C105 28 124 43 124 62C124 82 105 98 78 98H48V28Z"
       stroke="#F8FAF9"
-      stroke-width="10"
+      stroke-width="11"
       stroke-linejoin="miter"
     />
+    <path d="M48 28V98" stroke="#F8FAF9" stroke-width="11"/>
     <path
-      d="M123 63H96"
+      d="M82 63H132"
       stroke="#36DFB6"
-      stroke-width="10"
+      stroke-width="8"
       stroke-linejoin="miter"
     />
   </g>
