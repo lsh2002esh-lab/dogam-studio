@@ -27,9 +27,12 @@ export default function Header() {
     >
       <nav className="section-shell flex h-[72px] items-center justify-between py-4">
         <a href="#top" className="group flex items-center gap-3" aria-label="DO_GAM STUDIO 홈">
-          <span className="grid h-9 w-9 place-items-center border border-mint-300 bg-mint-300 text-sm font-black text-ink transition group-hover:bg-white">
-            DG
-          </span>
+          <img
+            src="./images/dogam-mark.svg"
+            alt=""
+            className="h-10 w-10 border border-white/10 transition group-hover:border-mint-300"
+            aria-hidden="true"
+          />
           <span className="flex flex-col leading-none">
             <span className="text-sm font-black tracking-[0.22em]">DO_GAM</span>
             <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-white/55">Studio</span>

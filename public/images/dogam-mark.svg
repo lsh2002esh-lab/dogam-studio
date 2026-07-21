@@ -1,0 +1,22 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">DO_GAM STUDIO mark</title>
+  <desc id="desc">DG monogram inside viewfinder corners.</desc>
+  <rect width="128" height="128" fill="#050606"/>
+  <path d="M18 42V18H42" stroke="#F4F7F6" stroke-width="7" stroke-linecap="square"/>
+  <path d="M86 18H110V42" stroke="#36DFB6" stroke-width="7" stroke-linecap="square"/>
+  <path d="M18 86V110H42" stroke="#36DFB6" stroke-width="7" stroke-linecap="square"/>
+  <path d="M86 110H110V86" stroke="#F4F7F6" stroke-width="7" stroke-linecap="square"/>
+  <circle cx="88" cy="39" r="5.5" fill="#36DFB6"/>
+  <path
+    d="M42 42H58C73 42 82 52 82 63C82 74 72 84 58 84H42V42Z"
+    stroke="#F4F7F6"
+    stroke-width="9"
+    stroke-linejoin="miter"
+  />
+  <path
+    d="M86 62H66C55 62 47 70 47 79C47 90 57 98 70 98H91V80H71"
+    stroke="#F4F7F6"
+    stroke-width="9"
+    stroke-linejoin="miter"
+  />
+</svg>
